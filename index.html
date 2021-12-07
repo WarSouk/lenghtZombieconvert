@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lenght converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class='container'> 
+      <header>
+        <div class='select_cont'>
+          <select id='select_scale'>
+            <option id=''> Выберите конвертируемую величину </option>
+            <option id='cm'> Сантиметры </option>
+            <option id='km'> Километры </option>
+            <option id='yd'> Ярды </option>
+            <option id='in'> Дюймы </option>
+            <option id='ft'> Футы </option>
+            <option id='ml'> Мили </option>
+          </select>
+          <div id='err_msg'> </div>
+          <button id='check_btn'> Подтвердить величину </button>
+        </div>
+        <div id='current_convertee'> Текущая конвертация </div>
+        <div id='input_container'>
+          <input type='number' id='input_value' placeholder='Введите кол-во'>
+        </div>
+      </header>
+     <main>
+       <div class='row' id='cm_row'>
+         <label> Сантиметры </label>
+         <input id='cm_result' type='number' readonly>
+       </div>
+       <div class='row' id='km_row'>
+         <label> Километры </label>
+         <input id='km_result' type='number' readonly>
+       </div>
+       <div class='row' id='yd_row'>
+         <label> Ярды </label>
+         <input id='yd_result' type='number' readonly>
+       </div>
+       <div class='row' id='in_row'>
+         <label> Дюймы </label>
+         <input id='in_result' type='number' readonly>
+       </div>
+       <div class='row' id='ft_row'>
+         <label> Футы </label>
+         <input id='ft_result' type='number' readonly>
+       </div>
+       <div class='row' id='ml_row'>
+         <label> Мили </label>
+         <input id='ml_result' type='number' readonly>
+       </div>
+     </main>
+   </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
